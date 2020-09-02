@@ -1,6 +1,5 @@
 
 import React from 'react';
-// ray test touch <
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 
@@ -16,6 +15,5 @@ const App = () => {
     </ThemeProvider>
   );
 };
-// ray test touch >
 
 export default App;
