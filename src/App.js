@@ -5,13 +5,16 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from 'styles/theme';
 import Layout from 'utils/hocs/Layout';
+import JoynUIAudit from 'parts/JoynUIAudit';
 import './App.css';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Layout />
+      <Layout>
+        <JoynUIAudit />
+      </Layout>
     </ThemeProvider>
   );
 };

@@ -4,9 +4,10 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: '#33d8c7',
-      main: '#00cfba',
-      dark: '#009082',
+      light: '#677281',
+      main: '#424f62',
+      // TODO: primary dark color is from MUI https://material-ui.com/customization/color/#playground, not from the design.
+      dark: '#2e3744',
       contrastText: '#fff'
     },
     secondary: {
@@ -31,9 +32,12 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiButton: {
-      // TODO: small, large
-      // https://material-ui.com/customization/globals/
-      // https://material-ui.com/api/button/
+      /**
+       * TODO: dimensions for small and large size buttons are not defined.
+       * Re:
+       * https://material-ui.com/customization/globals/
+       * https://material-ui.com/api/button/
+       */
       root: {
         minWidth: 96,
         minHeight: 40
