@@ -86,13 +86,8 @@ const theme = createMuiTheme({
   },
   custom: {
     palette: {
-      blueGrey: '#424f62',
-      // network color schema
-      grey: '#4A4A4A', // equipment
-      red: '#F66', // gas
-      green: '#6C6', // oil
-      blue: '#387DF4', // water
-      darkBlue: '#34528b'
+      iceBlueMain: '#f2f9fb',
+      iceBlueDark: '#e1f4f9'
     },
     layout: {
       openedDrawerWidth: 272,

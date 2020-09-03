@@ -14,20 +14,21 @@ const useStyles = makeStyles(theme => ({
   root: {
     textTransform: 'none',
   },
-  // ray test touch <<
   containedButton: {
     boxShadow: 'none',
-    '&:hover': {
-      boxShadow: 'none'
-    },
-    '&:active': {
+    '&:hover, &:active': {
       boxShadow: 'none'
     }
   },
   outlinedButton: {
-
+    borderColor: theme.palette.primary.main,
+    '&:not(:disabled)': {
+      backgroundColor: theme.custom.palette.iceBlueMain,
+    },
+    '&:hover, &:active': {
+      backgroundColor: theme.custom.palette.iceBlueDark
+    }
   },
-  // ray test touch >>
   leftMargin: {
     marginLeft: theme.spacing(1)
   }
@@ -46,18 +47,14 @@ const JoynButton = ({
   return (
     <Button
       {...rest}
-      // ray test touch <<
       className={clsx(
         classes.root,
         {[classes.containedButton]: variant === 'contained'},
         {[classes.outlinedButton]: variant === 'outlined'},
         className
       )}
-      // ray test touch >>
       color={color}
-      // ray test touch <<
       variant={variant}
-      // ray test touch >>
       disabled={loading || disabled}
       endIcon={loading && (
         <CircularProgress
