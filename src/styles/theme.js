@@ -63,44 +63,84 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: 'Gustanlp, Arial',
     htmlFontSize: 10,
-    button: {
-      fontSize: '1.2rem',
-      letterSpacing: '-0.33px'
+    // ray test touch <
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
+    h1: {
+      fontWeight: 500,
+      fontSize: '4.4rem',
+      lineHeight: 1.11,
+      letterSpacing: 'normal'
+    },
+    h2: {
+      fontWeight: 500,
+      fontSize: '3.2rem',
+      lineHeight: 1.09,
+      letterSpacing: 'normal'
     },
     h3: {
-      fontSize: '2.4rem',
-      letterSpacing: '-0.67px'
+      fontWeight: 500,
+      fontSize: '2.8rem',
+      lineHeight: 1.11,
+      letterSpacing: 'normal'
     },
     h4: {
-      fontSize: '1.8rem',
-      letterSpacing: '-0.5px'
+      fontWeight: 500,
+      fontSize: '2.4rem',
+      lineHeight: 1.13,
+      letterSpacing: 'normal'
     },
     h5: {
-      fontSize: '1.4rem',
-      letterSpacing: '-0.39px',
+      fontWeight: 500,
+      fontSize: '2rem',
+      lineHeight: 1.1,
+      letterSpacing: 'normal'
     },
     h6: {
-      fontSize: '1.2rem',
-      letterSpacing: '-0.33px'
+      fontWeight: 700,
+      fontSize: '1.6rem',
+      lineHeight: 1.06,
+      letterSpacing: 'normal'
     },
     subtitle1: {
-      fontSize: '1rem',
-      letterSpacing: '-0.28px',
-      fontWeight: 700
-    },
-    body1: {
-      fontSize: '1rem',
-      letterSpacing: '-0.28px'
+      fontWeight: 500,
+      fontSize: '1.4rem',
+      lineHeight: 1.14,
+      letterSpacing: 'normal'
     },
     subtitle2: {
-      fontSize: '.8rem',
-      letterSpacing: '-0.22px',
-      fontWeight: 700
+      fontWeight: 500,
+      fontSize: '1.2rem',
+      lineHeight: 1.08,
+      letterSpacing: 'normal'
+    },
+    body1: {
+      fontWeight: 400,
+      fontSize: '1.4rem',
+      lineHeight: 1.14,
+      letterSpacing: 'normal'
     },
     body2: {
-      fontSize: '.8rem',
-      letterSpacing: '-0.22px'
-    }
+      fontWeight: 400,
+      fontSize: '1.2rem',
+      lineHeight: 1.08,
+      letterSpacing: 'normal'
+    },
+    button: {
+      fontWeight: 500,
+      fontSize: '1.4rem',
+      lineHeight: 1.14,
+      letterSpacing: 'normal'
+    },
+    caption: {
+      fontWeight: 400,
+      fontSize: '1rem',
+      lineHeight: 1.1,
+      letterSpacing: 'normal'
+    },
+    // ray test touch >
   },
   custom: {
     palette: {
