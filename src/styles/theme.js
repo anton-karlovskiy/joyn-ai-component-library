@@ -30,7 +30,6 @@ const theme = createMuiTheme({
     }
   },
   overrides: {
-    // ray test touch <
     MuiCssBaseline: {
       '@global': {
         '@font-face': [
@@ -48,7 +47,6 @@ const theme = createMuiTheme({
         ]
       }
     },
-    // ray test touch >
     MuiButton: {
       /**
        * TODO: dimensions for small and large size buttons are not defined.
@@ -63,9 +61,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    // ray test touch <
     fontFamily: 'Gustanlp, Arial',
-    // ray test touch >
     htmlFontSize: 10,
     button: {
       fontSize: '1.2rem',
