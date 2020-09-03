@@ -12,8 +12,11 @@ import clsx from 'clsx';
  */
 const useStyles = makeStyles(theme => ({
   root: {
-    boxShadow: 'none',
     textTransform: 'none',
+  },
+  // ray test touch <<
+  containedButton: {
+    boxShadow: 'none',
     '&:hover': {
       boxShadow: 'none'
     },
@@ -21,13 +24,18 @@ const useStyles = makeStyles(theme => ({
       boxShadow: 'none'
     }
   },
+  outlinedButton: {
+
+  },
+  // ray test touch >>
   leftMargin: {
     marginLeft: theme.spacing(1)
   }
 }));
 
-const ContainedButton = ({
+const JoynButton = ({
   className,
+  variant,
   color,
   loading,
   disabled,
@@ -38,9 +46,18 @@ const ContainedButton = ({
   return (
     <Button
       {...rest}
-      className={clsx(classes.root, className)}
+      // ray test touch <<
+      className={clsx(
+        classes.root,
+        {[classes.containedButton]: variant === 'contained'},
+        {[classes.outlinedButton]: variant === 'outlined'},
+        className
+      )}
+      // ray test touch >>
       color={color}
-      variant='contained'
+      // ray test touch <<
+      variant={variant}
+      // ray test touch >>
       disabled={loading || disabled}
       endIcon={loading && (
         <CircularProgress
@@ -51,4 +68,4 @@ const ContainedButton = ({
   );
 };
 
-export default ContainedButton;
+export default JoynButton;

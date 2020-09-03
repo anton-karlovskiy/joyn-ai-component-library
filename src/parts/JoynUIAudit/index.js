@@ -2,8 +2,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import ContainedButton from 'components/UI/ContainedButton';
-import OutlinedButton from 'components/UI/OutlinedButton';
+import JoynButton from 'components/UI/JoynButton';
 import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
 import { ReactComponent as LighteningIcon } from 'assets/icons/svgs/lightening.svg';
@@ -22,41 +21,48 @@ const JoynUIAudit = () => {
   
   return (
     <div className={classes.joynUiAudit}>
-      <ContainedButton color='primary'>
+      <JoynButton
+        variant='contained'
+        color='primary'>
         New
-      </ContainedButton>
-      <ContainedButton
+      </JoynButton>
+      <JoynButton
+        variant='contained'
         color='primary'
         startIcon={<PlusIcon fill='currentColor' />}>
         New
-      </ContainedButton>
-      {/* ray test touch < */}
-      <ContainedButton
+      </JoynButton>
+      <JoynButton
+        variant='contained'
         color='primary'
         startIcon={<SaveIcon fill='currentColor' />}>
         Save
-      </ContainedButton>
-      <ContainedButton
+      </JoynButton>
+      <JoynButton
         loading
+        variant='contained'
         color='primary'
         startIcon={<SaveIcon fill='currentColor' />}>
         Save
-      </ContainedButton>
-      <OutlinedButton color='primary'>
+      </JoynButton>
+      <JoynButton
+        variant='outlined'
+        color='primary'>
         Actions
-      </OutlinedButton>
-      <OutlinedButton
+      </JoynButton>
+      <JoynButton
+        variant='outlined'
         color='primary'
         startIcon={<LighteningIcon fill='currentColor' />}>
         Actions
-      </OutlinedButton>
-      <OutlinedButton
+      </JoynButton>
+      <JoynButton
         loading
+        variant='outlined'
         color='primary'
         startIcon={<LighteningIcon fill='currentColor' />}>
         Actions
-      </OutlinedButton>
-      {/* ray test touch > */}
+      </JoynButton>
     </div>
   );
 };
