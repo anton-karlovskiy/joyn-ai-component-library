@@ -63,7 +63,6 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: 'Gustanlp, Arial',
     htmlFontSize: 10,
-    // ray test touch <
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
@@ -139,8 +138,7 @@ const theme = createMuiTheme({
       fontSize: '1rem',
       lineHeight: 1.1,
       letterSpacing: 'normal'
-    },
-    // ray test touch >
+    }
   },
   custom: {
     palette: {
