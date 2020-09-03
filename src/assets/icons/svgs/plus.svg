@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <g id="plus" transform="translate(-918 -112)">
         <g id="Group_1884" data-name="Group 1884" transform="translate(924 118)">
-            <path id="Path_7" fill-rule="evenodd" stroke-width="0.5px" d="M5.341 0h.826v5.341h5.341v.826H6.167v5.341h-.826V6.167H0v-.826h5.341z" data-name="Path 7"/>
+            <path id="Path_7" fill="currentColor" fill-rule="evenodd" stroke="currentColor" stroke-width="0.5px" d="M5.341 0h.826v5.341h5.341v.826H6.167v5.341h-.826V6.167H0v-.826h5.341z" data-name="Path 7"/>
         </g>
     </g>
 </svg>

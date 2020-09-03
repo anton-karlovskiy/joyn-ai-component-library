@@ -29,20 +29,27 @@ const JoynUIAudit = () => {
       <JoynButton
         variant='contained'
         color='primary'
-        startIcon={<PlusIcon fill='currentColor' />}>
+        startIcon={<PlusIcon />}>
         New
       </JoynButton>
       <JoynButton
         variant='contained'
         color='primary'
-        startIcon={<SaveIcon fill='currentColor' />}>
+        startIcon={<SaveIcon />}>
+        Save
+      </JoynButton>
+      <JoynButton
+        disabled
+        variant='contained'
+        color='primary'
+        startIcon={<SaveIcon />}>
         Save
       </JoynButton>
       <JoynButton
         loading
         variant='contained'
         color='primary'
-        startIcon={<SaveIcon fill='currentColor' />}>
+        startIcon={<SaveIcon />}>
         Save
       </JoynButton>
       <JoynButton
@@ -53,14 +60,21 @@ const JoynUIAudit = () => {
       <JoynButton
         variant='outlined'
         color='primary'
-        startIcon={<LighteningIcon fill='currentColor' />}>
+        startIcon={<LighteningIcon />}>
+        Actions
+      </JoynButton>
+      <JoynButton
+        disabled
+        variant='outlined'
+        color='primary'
+        startIcon={<LighteningIcon />}>
         Actions
       </JoynButton>
       <JoynButton
         loading
         variant='outlined'
         color='primary'
-        startIcon={<LighteningIcon fill='currentColor' />}>
+        startIcon={<LighteningIcon />}>
         Actions
       </JoynButton>
     </div>

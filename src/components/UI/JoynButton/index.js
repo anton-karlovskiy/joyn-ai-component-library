@@ -18,6 +18,9 @@ const useStyles = makeStyles(theme => ({
     boxShadow: 'none',
     '&:hover, &:active': {
       boxShadow: 'none'
+    },
+    '&:active': {
+      boxShadow: 'none'
     }
   },
   outlinedButton: {
