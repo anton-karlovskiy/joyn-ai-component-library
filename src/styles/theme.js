@@ -30,6 +30,25 @@ const theme = createMuiTheme({
     }
   },
   overrides: {
+    // ray test touch <
+    MuiCssBaseline: {
+      '@global': {
+        '@font-face': [
+          {
+            fontFamily: 'Gustanlp',
+            fontStyle: 'normal',
+            fontDisplay: 'swap',
+            fontWeight: 400,
+            src: `
+            local('Gustanlp'),
+            local('Gustanlp-Regular'),
+            url(/assets/fonts/Gustanlp-Medium.woff2) format('woff2')
+          `
+          }
+        ]
+      }
+    },
+    // ray test touch >
     MuiButton: {
       /**
        * TODO: dimensions for small and large size buttons are not defined.
@@ -44,6 +63,9 @@ const theme = createMuiTheme({
     }
   },
   typography: {
+    // ray test touch <
+    fontFamily: 'Gustanlp, Arial',
+    // ray test touch >
     htmlFontSize: 10,
     button: {
       fontSize: '1.2rem',

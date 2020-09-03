@@ -21,11 +21,14 @@ const JoynUIAudit = () => {
   
   return (
     <div className={classes.joynUiAudit}>
+      {/* regular contained button */}
       <JoynButton
         variant='contained'
         color='primary'>
         New
       </JoynButton>
+
+      {/* contained button with a start icon */}
       <JoynButton
         variant='contained'
         color='primary'
@@ -38,6 +41,8 @@ const JoynUIAudit = () => {
         startIcon={<SaveIcon />}>
         Save
       </JoynButton>
+
+      {/* contained button when disabled */}
       <JoynButton
         disabled
         variant='contained'
@@ -45,6 +50,8 @@ const JoynUIAudit = () => {
         startIcon={<SaveIcon />}>
         Save
       </JoynButton>
+
+      {/* contained button when loading */}
       <JoynButton
         loading
         variant='contained'
@@ -52,17 +59,23 @@ const JoynUIAudit = () => {
         startIcon={<SaveIcon />}>
         Save
       </JoynButton>
+
+      {/* regular outlined button */}
       <JoynButton
         variant='outlined'
         color='primary'>
         Actions
       </JoynButton>
+
+      {/* outlined button with a start icon */}
       <JoynButton
         variant='outlined'
         color='primary'
         startIcon={<LighteningIcon />}>
         Actions
       </JoynButton>
+
+      {/* contained button when disabled */}
       <JoynButton
         disabled
         variant='outlined'
@@ -70,12 +83,19 @@ const JoynUIAudit = () => {
         startIcon={<LighteningIcon />}>
         Actions
       </JoynButton>
+
+      {/* contained button when loading */}
       <JoynButton
         loading
         variant='outlined'
         color='primary'
         startIcon={<LighteningIcon />}>
         Actions
+      </JoynButton>
+
+      {/* regular text button */}
+      <JoynButton color='primary'>
+        Cancel
       </JoynButton>
     </div>
   );
