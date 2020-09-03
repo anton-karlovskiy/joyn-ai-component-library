@@ -6,8 +6,7 @@ const theme = createMuiTheme({
     primary: {
       light: '#677281',
       main: '#424f62',
-      // TODO: primary dark color is from MUI https://material-ui.com/customization/color/#playground, not from the design.
-      dark: '#2e3744',
+      dark: '#353d48',
       contrastText: '#fff'
     },
     secondary: {

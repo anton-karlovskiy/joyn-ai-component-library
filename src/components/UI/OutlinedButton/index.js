@@ -1,32 +1,21 @@
 
+// ray test touch <
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import clsx from 'clsx';
 
-/**
- * TODO:
- * Spacing (padding) is not defined in the design.
- * Button size is not defined in the design.
- */
 const useStyles = makeStyles(theme => ({
-  root: {
-    boxShadow: 'none',
-    textTransform: 'none',
-    '&:hover': {
-      boxShadow: 'none'
-    },
-    '&:active': {
-      boxShadow: 'none'
-    }
-  },
+  root: () => ({
+    textTransform: 'none'
+  }),
   leftMargin: {
     marginLeft: theme.spacing(1)
   }
 }));
 
-const ContainedButton = ({
+const OutlinedButton = ({
   className,
   color,
   loading,
@@ -37,10 +26,10 @@ const ContainedButton = ({
 
   return (
     <Button
-      {...rest}
+      {...rest}  
       className={clsx(classes.root, className)}
       color={color}
-      variant='contained'
+      variant='outlined'
       disabled={loading || disabled}
       endIcon={loading && (
         <CircularProgress
@@ -51,4 +40,5 @@ const ContainedButton = ({
   );
 };
 
-export default ContainedButton;
+export default OutlinedButton;
+// ray test touch >
