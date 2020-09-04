@@ -16,13 +16,25 @@ const theme = createMuiTheme({
       dark: '#e1f4f9',
       contrastText: '#424f62'
     },
-    // ray test touch >
     error: {
-      light: '#ff3333',
-      main: '#ff0000',
-      dark: '#b20000',
+      light: '#f5927b',
+      main: '#f3775b',
+      dark: '#aa533f',
       contrastText: '#fff'
     },
+    warning: {
+      light: '#fbe097',
+      main: '#fad97d',
+      dark: '#af9757',
+      contrastText: '#fff'
+    },
+    info: {
+      light: '#6ab6af',
+      main: '#45a49c',
+      dark: '#30726d',
+      contrastText: '#fff'
+    },
+    // ray test touch >
     text: {
       primary: '#2f2f2f',
       secondary: '#fff'
@@ -163,19 +175,8 @@ const theme = createMuiTheme({
     }
   },
   custom: {
-    // ray test touch <
-    palette: {
-      iceBlueMain: '#f2f9fb',
-      iceBlueDark: '#e1f4f9'
-    },
-    // ray test touch >
-    layout: {
-      openedDrawerWidth: 272,
-      closedDrawerWidth: 64,
-      upperSubToolbarHeight: 80,
-      lowerSubToolbarHeight: 64,
-      networkPopperWidth: 280
-    }
+    palette: {},
+    layout: {}
   }
 });
 
