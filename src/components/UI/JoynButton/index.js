@@ -1,4 +1,5 @@
 
+// ray test touch <
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -12,7 +13,7 @@ import clsx from 'clsx';
  */
 const useStyles = makeStyles(theme => ({
   root: {
-    textTransform: 'none',
+    textTransform: 'none'
   },
   containedButton: {
     boxShadow: 'none',
@@ -21,15 +22,6 @@ const useStyles = makeStyles(theme => ({
     },
     '&:active': {
       boxShadow: 'none'
-    }
-  },
-  outlinedButton: {
-    borderColor: theme.palette.primary.main,
-    '&:not(:disabled)': {
-      backgroundColor: theme.custom.palette.iceBlueMain,
-    },
-    '&:hover, &:active': {
-      backgroundColor: theme.custom.palette.iceBlueDark
     }
   },
   leftMargin: {
@@ -53,7 +45,6 @@ const JoynButton = ({
       className={clsx(
         classes.root,
         {[classes.containedButton]: variant === 'contained'},
-        {[classes.outlinedButton]: variant === 'outlined'},
         className
       )}
       color={color}
@@ -69,3 +60,4 @@ const JoynButton = ({
 };
 
 export default JoynButton;
+// ray test touch >

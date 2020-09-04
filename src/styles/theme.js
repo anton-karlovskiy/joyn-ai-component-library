@@ -9,12 +9,14 @@ const theme = createMuiTheme({
       dark: '#353d48',
       contrastText: '#fff'
     },
+    // ray test touch <
     secondary: {
-      light: '#7088b7',
-      main: '#4d6ba5',
-      dark: '#354a73',
-      contrastText: '#fff'
+      light: '#f4fafb',
+      main: '#f2f9fb',
+      dark: '#e1f4f9',
+      contrastText: '#424f62'
     },
+    // ray test touch >
     error: {
       light: '#ff3333',
       main: '#ff0000',
@@ -161,10 +163,12 @@ const theme = createMuiTheme({
     }
   },
   custom: {
+    // ray test touch <
     palette: {
       iceBlueMain: '#f2f9fb',
       iceBlueDark: '#e1f4f9'
     },
+    // ray test touch >
     layout: {
       openedDrawerWidth: 272,
       closedDrawerWidth: 64,

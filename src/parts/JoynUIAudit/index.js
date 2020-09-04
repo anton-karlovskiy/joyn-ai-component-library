@@ -2,10 +2,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import JoynButton from 'components/UI/JoynButton';
-import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
+// ray test touch <
+import JoynPrimaryButon from 'components/JoynPrimaryButon';
+import JoynSecondaryButton from 'components/JoynSecondaryButton';
+// ray test touch >
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
-import { ReactComponent as LighteningIcon } from 'assets/icons/svgs/lightening.svg';
+import { ReactComponent as PublishIcon } from 'assets/icons/svgs/publish.svg';
+// import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
+// import { ReactComponent as LighteningIcon } from 'assets/icons/svgs/lightening.svg';
 
 const useStyles = makeStyles(theme => ({
   joynUiAudit: {
@@ -21,82 +25,55 @@ const JoynUIAudit = () => {
   
   return (
     <div className={classes.joynUiAudit}>
-      {/* regular contained button */}
-      <JoynButton
-        variant='contained'
-        color='primary'>
-        New
-      </JoynButton>
-
-      {/* contained button with a start icon */}
-      <JoynButton
-        variant='contained'
-        color='primary'
-        startIcon={<PlusIcon />}>
-        New
-      </JoynButton>
-      <JoynButton
-        variant='contained'
-        color='primary'
-        startIcon={<SaveIcon />}>
+      {/* ray test touch < */}
+      {/* primary button */}
+      <JoynPrimaryButon>
         Save
-      </JoynButton>
+      </JoynPrimaryButon>
 
-      {/* contained button when disabled */}
-      <JoynButton
+      {/* primary button with a start icon */}
+      <JoynPrimaryButon startIcon={<SaveIcon />}>
+        Save
+      </JoynPrimaryButon>
+
+      {/* primary button when disabled */}
+      <JoynPrimaryButon
         disabled
-        variant='contained'
-        color='primary'
         startIcon={<SaveIcon />}>
         Save
-      </JoynButton>
+      </JoynPrimaryButon>
 
-      {/* contained button when loading */}
-      <JoynButton
+      {/* primary button when loading */}
+      <JoynPrimaryButon
         loading
-        variant='contained'
-        color='primary'
         startIcon={<SaveIcon />}>
         Save
-      </JoynButton>
+      </JoynPrimaryButon>
 
-      {/* regular outlined button */}
-      <JoynButton
-        variant='outlined'
-        color='primary'>
-        Actions
-      </JoynButton>
+      {/* secondary button */}
+      <JoynSecondaryButton>
+        Publish
+      </JoynSecondaryButton>
 
-      {/* outlined button with a start icon */}
-      <JoynButton
-        variant='outlined'
-        color='primary'
-        startIcon={<LighteningIcon />}>
-        Actions
-      </JoynButton>
+      {/* secondary button with a start icon */}
+      <JoynSecondaryButton startIcon={<PublishIcon />}>
+        Publish
+      </JoynSecondaryButton>
 
-      {/* contained button when disabled */}
-      <JoynButton
+      {/* secondary button when disabled */}
+      <JoynSecondaryButton
         disabled
-        variant='outlined'
-        color='primary'
-        startIcon={<LighteningIcon />}>
-        Actions
-      </JoynButton>
+        startIcon={<PublishIcon />}>
+        Publish
+      </JoynSecondaryButton>
 
-      {/* contained button when loading */}
-      <JoynButton
+      {/* secondary button when loading */}
+      <JoynSecondaryButton
         loading
-        variant='outlined'
-        color='primary'
-        startIcon={<LighteningIcon />}>
-        Actions
-      </JoynButton>
-
-      {/* regular text button */}
-      <JoynButton color='primary'>
-        Cancel
-      </JoynButton>
+        startIcon={<PublishIcon />}>
+        Publish
+      </JoynSecondaryButton>
+      {/* ray test touch > */}
     </div>
   );
 };
