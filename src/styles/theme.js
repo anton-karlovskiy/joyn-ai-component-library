@@ -9,7 +9,6 @@ const theme = createMuiTheme({
       dark: '#353d48',
       contrastText: '#fff'
     },
-    // ray test touch <
     secondary: {
       light: '#f4fafb',
       main: '#f2f9fb',
@@ -34,7 +33,6 @@ const theme = createMuiTheme({
       dark: '#30726d',
       contrastText: '#fff'
     },
-    // ray test touch >
     text: {
       primary: '#2f2f2f',
       secondary: '#fff'
