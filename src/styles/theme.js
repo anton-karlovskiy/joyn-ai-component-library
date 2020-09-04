@@ -30,6 +30,7 @@ const theme = createMuiTheme({
     }
   },
   overrides: {
+    // TODO: fonts should be specific to whether the font-weight is Light, Regular, Medium or Bold.
     MuiCssBaseline: {
       '@global': {
         '@font-face': [
@@ -39,17 +40,17 @@ const theme = createMuiTheme({
             fontDisplay: 'swap',
             fontWeight: 400,
             src: `
-            local('Gustanlp'),
-            local('Gustanlp-Regular'),
-            url(/assets/fonts/Gustanlp-Medium.woff2) format('woff2')
-          `
+              local('Gustanlp'),
+              local('Gustanlp-Regular'),
+              url(/assets/fonts/Gustanlp-Medium.woff2) format('woff2')
+            `
           }
         ]
       }
     },
     MuiButton: {
       /**
-       * TODO: dimensions for small and large size buttons are not defined.
+       * TODO: dimensions for small and large size buttons are not defined
        * Re:
        * https://material-ui.com/customization/globals/
        * https://material-ui.com/api/button/
@@ -61,6 +62,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
+    // TODO: should consider responsive behavior of typography based on the viewport size
     fontFamily: 'Gustanlp, Arial',
     htmlFontSize: 10,
     fontWeightLight: 300,
@@ -105,11 +107,29 @@ const theme = createMuiTheme({
     },
     subtitle1: {
       fontWeight: 500,
+      fontSize: '1.6rem',
+      lineHeight: 1.06,
+      letterSpacing: 'normal'
+    },
+    subtitle2: {
+      fontWeight: 500,
+      fontSize: '1.6rem',
+      lineHeight: 1.06,
+      letterSpacing: 'normal'
+    },
+    subtitle3: {
+      fontWeight: 700,
       fontSize: '1.4rem',
       lineHeight: 1.14,
       letterSpacing: 'normal'
     },
-    subtitle2: {
+    subtitle4: {
+      fontWeight: 500,
+      fontSize: '1.4rem',
+      lineHeight: 1.14,
+      letterSpacing: 'normal'
+    },
+    subtitle5: {
       fontWeight: 500,
       fontSize: '1.2rem',
       lineHeight: 1.08,
