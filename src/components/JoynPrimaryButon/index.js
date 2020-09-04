@@ -1,5 +1,4 @@
 
-// ray test touch <
 import React from 'react';
 
 import JoynButton from 'components/UI/JoynButton';
@@ -12,4 +11,3 @@ const JoynPrimaryButon = props => (
 );
 
 export default JoynPrimaryButon;
-// ray test touch >

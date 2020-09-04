@@ -2,10 +2,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-// ray test touch <
 import JoynPrimaryButon from 'components/JoynPrimaryButon';
 import JoynSecondaryButton from 'components/JoynSecondaryButton';
-// ray test touch >
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
 import { ReactComponent as PublishIcon } from 'assets/icons/svgs/publish.svg';
 // import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
@@ -25,7 +23,6 @@ const JoynUIAudit = () => {
   
   return (
     <div className={classes.joynUiAudit}>
-      {/* ray test touch < */}
       {/* primary button */}
       <JoynPrimaryButon>
         Save
@@ -73,7 +70,6 @@ const JoynUIAudit = () => {
         startIcon={<PublishIcon />}>
         Publish
       </JoynSecondaryButton>
-      {/* ray test touch > */}
     </div>
   );
 };
