@@ -5,7 +5,6 @@ import clsx from 'clsx';
 
 import JoynButton from 'components/UI/JoynButton';
 
-// ray test touch <
 const useStyles = makeStyles(theme => ({
   root: {
     color: theme.palette.action.active,
@@ -18,7 +17,6 @@ const useStyles = makeStyles(theme => ({
     }
   }
 }));
-// ray test touch >
 
 const JoynSecondaryButton = ({
   className,

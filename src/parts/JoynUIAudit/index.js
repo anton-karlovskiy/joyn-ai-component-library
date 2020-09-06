@@ -7,6 +7,7 @@ import JoynSecondaryButton from 'components/JoynSecondaryButton';
 import JoynTertiaryButton from 'components/JoynTertiaryButton';
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
 import { ReactComponent as PublishIcon } from 'assets/icons/svgs/publish.svg';
+import { ReactComponent as CrossIcon } from 'assets/icons/svgs/cross.svg';
 // import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
 // import { ReactComponent as LighteningIcon } from 'assets/icons/svgs/lightening.svg';
 
@@ -76,12 +77,29 @@ const JoynUIAudit = () => {
 
       <br />
 
-      {/* ray test touch < */}
       {/* tertiary button */}
       <JoynTertiaryButton>
         Cancel
       </JoynTertiaryButton>
-      {/* ray test touch > */}
+
+      {/* tertiary button with a start icon */}
+      <JoynTertiaryButton startIcon={<CrossIcon />}>
+      Cancel
+      </JoynTertiaryButton>
+
+      {/* tertiary button when disabled */}
+      <JoynTertiaryButton
+        disabled
+        startIcon={<CrossIcon />}>
+        Cancel
+      </JoynTertiaryButton>
+
+      {/* tertiary button when loading */}
+      <JoynTertiaryButton
+        loading
+        startIcon={<CrossIcon />}>
+        Cancel
+      </JoynTertiaryButton>
     </div>
   );
 };

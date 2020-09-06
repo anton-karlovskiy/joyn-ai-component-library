@@ -17,8 +17,8 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: theme.palette.action.disabledBackground
     }
   },
-  leftMargin: {
-    marginLeft: theme.spacing(1)
+  loadingSpinner: {
+    margin: theme.spacing(0, .5)
   }
 }));
 
@@ -47,7 +47,7 @@ const JoynButton = ({
         <CircularProgress
           color={color === 'primary' ? 'secondary' : 'primary'}
           size={16}
-          className={classes.leftMargin} />
+          className={classes.loadingSpinner} />
       )} />
   );
 };

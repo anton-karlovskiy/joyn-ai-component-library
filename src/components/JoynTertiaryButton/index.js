@@ -1,5 +1,4 @@
 
-// ray test touch <
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -32,4 +31,3 @@ const JoynTertiaryButton = ({
 };
 
 export default JoynTertiaryButton;
-// ray test touch >

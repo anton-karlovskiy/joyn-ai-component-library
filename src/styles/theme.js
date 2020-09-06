@@ -38,17 +38,14 @@ const theme = createMuiTheme({
       contrastText: '#fff'
     },
     text: {
-      // ray test touch <
       primary: '#2d2d2d',
       secondary: '#4c4c4c',
       disabled: '#a2a2a0',
       hint: '#e8e8e8' // TODO: so-called placeholder in the design
-      // ray test touch >
     },
     background: {
       default: '#f5f6f8'
     },
-    // ray test touch <
     action: {
       active: '#424f62',
       hover: '#353d48', // TODO: the color when the cursor being hovered on a button stays the same as the one in the active status
@@ -56,7 +53,6 @@ const theme = createMuiTheme({
       disabled: '#9ba6b6',
       disabledBackground: 'rgba(0, 0, 0, 0.12)', // TODO: not defined in the design
     }
-    // ray test touch >
   },
   overrides: {
     // TODO: fonts should be specific to whether the font-weight is Light, Regular, Medium or Bold.
