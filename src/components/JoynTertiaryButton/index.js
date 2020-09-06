@@ -1,26 +1,24 @@
 
+// ray test touch <
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 
 import JoynButton from 'components/UI/JoynButton';
 
-// ray test touch <
 const useStyles = makeStyles(theme => ({
   root: {
     color: theme.palette.action.active,
-    '&:not(:disabled)': {
-      backgroundColor: theme.palette.secondary.main,
-      border: `1px solid ${theme.palette.primary.main}`
-    },
     '&:hover': {
+      backgroundColor: theme.palette.secondary.main
+    },
+    '&:active': {
       backgroundColor: theme.palette.secondary.dark
     }
   }
 }));
-// ray test touch >
 
-const JoynSecondaryButton = ({
+const JoynTertiaryButton = ({
   className,
   ...rest
 }) => {
@@ -33,4 +31,5 @@ const JoynSecondaryButton = ({
   );
 };
 
-export default JoynSecondaryButton;
+export default JoynTertiaryButton;
+// ray test touch >

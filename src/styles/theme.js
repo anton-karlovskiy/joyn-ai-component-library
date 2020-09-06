@@ -3,6 +3,10 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
+    common: {
+      black: '#000',
+      white: '#fff'
+    },
     primary: {
       light: '#677281',
       main: '#424f62',
@@ -13,7 +17,7 @@ const theme = createMuiTheme({
       light: '#f4fafb',
       main: '#f2f9fb',
       dark: '#e1f4f9',
-      contrastText: '#424f62'
+      contrastText: '#fff'
     },
     error: {
       light: '#f5927b',
@@ -34,12 +38,25 @@ const theme = createMuiTheme({
       contrastText: '#fff'
     },
     text: {
-      primary: '#2f2f2f',
-      secondary: '#fff'
+      // ray test touch <
+      primary: '#2d2d2d',
+      secondary: '#4c4c4c',
+      disabled: '#a2a2a0',
+      hint: '#e8e8e8' // TODO: so-called placeholder in the design
+      // ray test touch >
     },
     background: {
       default: '#f5f6f8'
+    },
+    // ray test touch <
+    action: {
+      active: '#424f62',
+      hover: '#353d48', // TODO: the color when the cursor being hovered on a button stays the same as the one in the active status
+      selected: '#d1eef6',
+      disabled: '#9ba6b6',
+      disabledBackground: 'rgba(0, 0, 0, 0.12)', // TODO: not defined in the design
     }
+    // ray test touch >
   },
   overrides: {
     // TODO: fonts should be specific to whether the font-weight is Light, Regular, Medium or Bold.

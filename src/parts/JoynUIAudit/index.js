@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import JoynPrimaryButon from 'components/JoynPrimaryButon';
 import JoynSecondaryButton from 'components/JoynSecondaryButton';
+import JoynTertiaryButton from 'components/JoynTertiaryButton';
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
 import { ReactComponent as PublishIcon } from 'assets/icons/svgs/publish.svg';
 // import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
@@ -47,6 +48,8 @@ const JoynUIAudit = () => {
         Save
       </JoynPrimaryButon>
 
+      <br />
+
       {/* secondary button */}
       <JoynSecondaryButton>
         Publish
@@ -70,6 +73,15 @@ const JoynUIAudit = () => {
         startIcon={<PublishIcon />}>
         Publish
       </JoynSecondaryButton>
+
+      <br />
+
+      {/* ray test touch < */}
+      {/* tertiary button */}
+      <JoynTertiaryButton>
+        Cancel
+      </JoynTertiaryButton>
+      {/* ray test touch > */}
     </div>
   );
 };

@@ -12,15 +12,9 @@ import clsx from 'clsx';
  */
 const useStyles = makeStyles(theme => ({
   root: {
-    textTransform: 'none'
-  },
-  containedButton: {
-    boxShadow: 'none',
-    '&:hover, &:active': {
-      boxShadow: 'none'
-    },
-    '&:active': {
-      boxShadow: 'none'
+    textTransform: 'none',
+    '&:disabled': {
+      backgroundColor: theme.palette.action.disabledBackground
     }
   },
   leftMargin: {
