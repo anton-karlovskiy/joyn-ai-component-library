@@ -50,9 +50,9 @@ const JoynButton = ({
       {...rest}
       className={clsx(
         classes.root,
-        {[classes.primaryButton]: type === BUTTON_TYPES.PRIMARY},
-        {[classes.secondaryButton]: type === BUTTON_TYPES.SECONDARY},
-        {[classes.tertiaryButton]: type === BUTTON_TYPES.TERTIARY},
+        { [classes.primaryButton]: type === BUTTON_TYPES.PRIMARY },
+        { [classes.secondaryButton]: type === BUTTON_TYPES.SECONDARY },
+        { [classes.tertiaryButton]: type === BUTTON_TYPES.TERTIARY },
         className
       )} />
   );

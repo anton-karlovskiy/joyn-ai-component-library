@@ -37,7 +37,7 @@ const JoynButtonBase = ({
       {...rest}
       className={clsx(
         classes.root,
-        {[classes.containedButton]: variant === 'contained'},
+        { [classes.containedButton]: variant === 'contained' },
         className
       )}
       color={color}

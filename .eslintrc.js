@@ -1,8 +1,8 @@
 
 // ray test touch <
 /**
- * TODO: double check the best practices in defining the eslint with CRA.
- * Remove the linting rules set by default
+ * TODO: double check the best practices in defining Google's eslint with CRA.
+ * Remove the unnecessary linting rules set by default
  */
 module.exports = {
   env: {
@@ -41,7 +41,7 @@ module.exports = {
     'semi': ['warn', 'always'],
     'indent': ['error', 2],
     'comma-spacing': ['error', { 'before': false, 'after': true }],
-    'object-curly-spacing': ['warn', 'never'],
+    'object-curly-spacing': ['warn', 'always'],
     'quote-props': ['error', 'as-needed'],
     'react/prop-types': 'warn',
     'no-trailing-spaces': ['error', { 'skipBlankLines': true, 'ignoreComments': true }],
