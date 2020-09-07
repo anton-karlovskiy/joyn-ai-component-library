@@ -3,7 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 
-import JoynButton from 'components/UI/JoynButton';
+import JoynButtonBase from 'components/UI/JoynButtonBase';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,7 +24,7 @@ const JoynPrimaryButon = ({
   const classes = useStyles();
 
   return (
-    <JoynButton
+    <JoynButtonBase
       {...rest}
       className={clsx(classes.root, className)} />
   );

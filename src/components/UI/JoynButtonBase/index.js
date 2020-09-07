@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const JoynButton = ({
+const JoynButtonBase = ({
   className,
   variant,
   color,
@@ -52,4 +52,4 @@ const JoynButton = ({
   );
 };
 
-export default JoynButton;
+export default JoynButtonBase;
