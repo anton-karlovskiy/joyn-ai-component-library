@@ -2,12 +2,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import JoynPrimaryButon from 'components/JoynPrimaryButon';
-import JoynSecondaryButton from 'components/JoynSecondaryButton';
-import JoynTertiaryButton from 'components/JoynTertiaryButton';
+import JoynButton from 'components/JoynButton';
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
 import { ReactComponent as PublishIcon } from 'assets/icons/svgs/publish.svg';
 import { ReactComponent as CrossIcon } from 'assets/icons/svgs/cross.svg';
+import BUTTON_TYPES from 'utils/constants/button-types';
 // import { ReactComponent as PlusIcon } from 'assets/icons/svgs/plus.svg';
 // import { ReactComponent as LighteningIcon } from 'assets/icons/svgs/lightening.svg';
 
@@ -26,80 +25,92 @@ const JoynUIAudit = () => {
   return (
     <div className={classes.joynUiAudit}>
       {/* primary button */}
-      <JoynPrimaryButon>
+      <JoynButton type={BUTTON_TYPES.PRIMARY}>
         Save
-      </JoynPrimaryButon>
+      </JoynButton>
 
       {/* primary button with a start icon */}
-      <JoynPrimaryButon startIcon={<SaveIcon />}>
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
+        startIcon={<SaveIcon />}>
         Save
-      </JoynPrimaryButon>
+      </JoynButton>
 
       {/* primary button when disabled */}
-      <JoynPrimaryButon
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
         disabled
         startIcon={<SaveIcon />}>
         Save
-      </JoynPrimaryButon>
+      </JoynButton>
 
       {/* primary button when loading */}
-      <JoynPrimaryButon
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
         loading
         startIcon={<SaveIcon />}>
         Save
-      </JoynPrimaryButon>
+      </JoynButton>
 
       <br />
 
       {/* secondary button */}
-      <JoynSecondaryButton>
+      <JoynButton type={BUTTON_TYPES.PRIMARY}>
         Publish
-      </JoynSecondaryButton>
+      </JoynButton>
 
       {/* secondary button with a start icon */}
-      <JoynSecondaryButton startIcon={<PublishIcon />}>
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
+        startIcon={<PublishIcon />}>
         Publish
-      </JoynSecondaryButton>
+      </JoynButton>
 
       {/* secondary button when disabled */}
-      <JoynSecondaryButton
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
         disabled
         startIcon={<PublishIcon />}>
         Publish
-      </JoynSecondaryButton>
+      </JoynButton>
 
       {/* secondary button when loading */}
-      <JoynSecondaryButton
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
         loading
         startIcon={<PublishIcon />}>
         Publish
-      </JoynSecondaryButton>
+      </JoynButton>
 
       <br />
 
       {/* tertiary button */}
-      <JoynTertiaryButton>
+      <JoynButton type={BUTTON_TYPES.PRIMARY}>
         Cancel
-      </JoynTertiaryButton>
+      </JoynButton>
 
       {/* tertiary button with a start icon */}
-      <JoynTertiaryButton startIcon={<CrossIcon />}>
-      Cancel
-      </JoynTertiaryButton>
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
+        startIcon={<CrossIcon />}>
+        Cancel
+      </JoynButton>
 
       {/* tertiary button when disabled */}
-      <JoynTertiaryButton
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
         disabled
         startIcon={<CrossIcon />}>
         Cancel
-      </JoynTertiaryButton>
+      </JoynButton>
 
       {/* tertiary button when loading */}
-      <JoynTertiaryButton
+      <JoynButton
+        type={BUTTON_TYPES.PRIMARY}
         loading
         startIcon={<CrossIcon />}>
         Cancel
-      </JoynTertiaryButton>
+      </JoynButton>
     </div>
   );
 };
