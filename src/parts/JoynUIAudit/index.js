@@ -115,4 +115,4 @@ const JoynUIAudit = () => {
   );
 };
 
-export default JoynUIAudit
+export default JoynUIAudit;

@@ -39,19 +39,19 @@ const Template = args => {
 const Primary = Template.bind({});
 Primary.args = {
   type: BUTTON_TYPES.PRIMARY,
-  children: 'Primary',
+  children: 'Primary'
 };
 
 const Secondary = Template.bind({});
 Secondary.args = {
   type: BUTTON_TYPES.SECONDARY,
-  children: 'Secondary',
+  children: 'Secondary'
 };
 
 const Tertiary = Template.bind({});
 Tertiary.args = {
   type: BUTTON_TYPES.TERTIARY,
-  children: 'Tertiary',
+  children: 'Tertiary'
 };
 
 export default {
