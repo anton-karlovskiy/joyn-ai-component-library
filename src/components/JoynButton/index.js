@@ -60,7 +60,9 @@ const JoynButton = ({
 
 JoynButton.propTypes = {
   // TODO: hardcoded
-  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary'])
+  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  loading: PropTypes.bool,
+  disabled: PropTypes.bool
 };
 
 export default JoynButton;
