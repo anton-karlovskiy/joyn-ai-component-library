@@ -1,5 +1,4 @@
 
-// ray test touch <
 const BUTTON_TYPES = Object.freeze({
   PRIMARY: 'primary',
   SECONDARY: 'secondary',
@@ -7,4 +6,3 @@ const BUTTON_TYPES = Object.freeze({
 });
 
 export default BUTTON_TYPES;
-// ray test touch >

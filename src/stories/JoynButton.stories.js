@@ -1,5 +1,4 @@
 
-// ray test touch <
 import React from 'react';
 
 import JoynButton from 'components/JoynButton';
@@ -35,4 +34,3 @@ export {
   SecondaryNormal,
   TertiaryNormal
 };
-// ray test touch >
