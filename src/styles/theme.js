@@ -43,7 +43,8 @@ const theme = createMuiTheme({
     },
     action: {
       active: '#424f62',
-      hover: '#353d48', // TODO: the color when the cursor being hovered on a button stays the same as the one in the active status
+      // TODO: the color when the cursor being hovered on a button stays the same as the one in the active status
+      hover: '#353d48',
       selected: '#d1eef6',
       disabled: '#9ba6b6',
       disabledBackground: 'rgba(0, 0, 0, 0.12)' // TODO: not defined in the design

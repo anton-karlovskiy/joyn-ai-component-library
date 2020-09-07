@@ -1,5 +1,4 @@
 
-// ray test touch <
 /**
  * TODO: double check the best practices in defining Google's eslint with CRA.
  * Remove the unnecessary linting rules set by default
@@ -13,8 +12,7 @@ module.exports = {
     node: true
   },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
+    // 'eslint:recommended',
     'react-app',
     'google'
   ],
@@ -37,10 +35,11 @@ module.exports = {
   rules: {
     'comma-dangle': ['warn', 'never'],
     'no-console': 'warn',
-    'quotes': ['warn', 'single'],
-    'semi': ['warn', 'always'],
+    // MEMO: the rules below are set by Google's
+    // 'quotes': ['error', 'single'],
+    // 'semi': ['error', 'always'],
+    // 'comma-spacing': ['error', { 'before': false, 'after': true }],
     'indent': ['error', 2],
-    'comma-spacing': ['error', { 'before': false, 'after': true }],
     'object-curly-spacing': ['warn', 'always'],
     'quote-props': ['error', 'as-needed'],
     'react/prop-types': 'warn',
@@ -67,4 +66,3 @@ module.exports = {
     ]
   }
 };
-// ray test touch >
