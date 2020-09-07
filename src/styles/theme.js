@@ -8,15 +8,10 @@ const theme = createMuiTheme({
       white: '#fff'
     },
     primary: {
-      light: '#677281',
+      lighter: '#f2f9fb',
+      light: '#e1f4f9',
       main: '#424f62',
       dark: '#353d48',
-      contrastText: '#fff'
-    },
-    secondary: {
-      light: '#f4fafb',
-      main: '#f2f9fb',
-      dark: '#e1f4f9',
       contrastText: '#fff'
     },
     error: {

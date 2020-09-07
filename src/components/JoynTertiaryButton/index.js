@@ -9,10 +9,10 @@ const useStyles = makeStyles(theme => ({
   root: {
     color: theme.palette.action.active,
     '&:hover': {
-      backgroundColor: theme.palette.secondary.main
+      backgroundColor: theme.palette.primary.lighter
     },
     '&:active': {
-      backgroundColor: theme.palette.secondary.dark
+      backgroundColor: theme.palette.primary.light
     }
   }
 }));

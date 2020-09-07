@@ -9,11 +9,11 @@ const useStyles = makeStyles(theme => ({
   root: {
     color: theme.palette.action.active,
     '&:not(:disabled)': {
-      backgroundColor: theme.palette.secondary.main,
+      backgroundColor: theme.palette.primary.lighter,
       border: `1px solid ${theme.palette.primary.main}`
     },
     '&:hover': {
-      backgroundColor: theme.palette.secondary.dark
+      backgroundColor: theme.palette.primary.light
     }
   }
 }));
