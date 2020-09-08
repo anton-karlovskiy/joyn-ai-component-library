@@ -7,12 +7,10 @@ module.exports = {
     node: true
   },
   extends: [
-    // 'eslint:recommended',
     'react-app',
     'google',
-    // ray test touch <
+    // TODO: it looks like prettier is not working
     'plugin:prettier/recommended'
-    // ray test touch >
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -42,17 +40,20 @@ module.exports = {
     'quote-props': ['error', 'as-needed'],
     'react/prop-types': 'warn',
     'no-trailing-spaces': ['error', { 'skipBlankLines': true, 'ignoreComments': true }],
-    // ray test touch <
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'always' }],
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
-    'react/jsx-curly-spacing': ['error', {'when': 'never', 'children': true}],
+    'react/jsx-curly-spacing': ['error', { 'when': 'never', 'children': true }],
+    'react/jsx-tag-spacing': ['error', {
+      'closingSlash': 'never',
+      'beforeSelfClosing': 'always',
+      'afterOpening': 'never',
+      'beforeClosing': 'never'
+    }],
     'jsx-quotes': ['error', 'prefer-single'],
-    // ray test touch >
-    // ray test touch <
+    // TODO: it looks like prettier is not working
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    // ray test touch >
 
     'max-len': ['warn',
       {
