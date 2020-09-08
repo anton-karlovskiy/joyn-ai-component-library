@@ -17,15 +17,20 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "netlify-deploy": "npm run build && netlify deploy --prod --dir=build",
+    "netlify-deploy": "yarn build && netlify deploy --prod --dir=build",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint --fix src/**/*.js"
+    "lint": "eslint src/**/*.+(js)",
+    "lint-fix": "eslint --fix src/**/*.+(js)",
+    "format": "prettier --write src/**/*.+(js)"
   },
   "lint-staged": {
-    "**/*.js": [
-      "npm run lint-fix",
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|yml|yaml|css|md)": [
+      "prettier --write",
       "git add"
     ]
   },
@@ -60,8 +65,11 @@
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
     "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
     "react-is": "^16.13.1",
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   }
