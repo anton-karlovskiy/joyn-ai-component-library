@@ -1,5 +1,6 @@
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -50,6 +51,16 @@ const JoynButtonBase = ({
           className={classes.loadingSpinner} />
       )} />
   );
+};
+
+JoynButtonBase.propTypes = {
+  className: PropTypes.string,
+  variant: PropTypes.string,
+  // TODO: hardcoded
+  color: PropTypes.oneOf(['primary', 'secondary']),
+  loading: PropTypes.bool,
+  disabled: PropTypes.bool,
+  children: PropTypes.node
 };
 
 export default JoynButtonBase;

@@ -1,57 +1,91 @@
 
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 
 import JoynButton from 'components/JoynButton';
 import BUTTON_TYPES from 'utils/constants/button-types';
 import { ReactComponent as SaveIcon } from 'assets/icons/svgs/save.svg';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    margin: theme.spacing(1),
-    '& > *': {
-      margin: theme.spacing(.5)
-    }
-  }
-}));
+const Template = args => <JoynButton {...args} />;
 
-const Template = args => {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <JoynButton {...args} />
-      <JoynButton
-        {...args}
-        startIcon={<SaveIcon />} />
-      <JoynButton
-        {...args}
-        disabled
-        startIcon={<SaveIcon />} />
-      <JoynButton
-        {...args}
-        loading
-        startIcon={<SaveIcon />} />
-    </div>
-  );
-};
-
-const Primary = Template.bind({});
-Primary.args = {
+const PrimaryDefault = Template.bind({});
+PrimaryDefault.args = {
   type: BUTTON_TYPES.PRIMARY,
   children: 'Primary'
 };
 
-const Secondary = Template.bind({});
-Secondary.args = {
+const PrimaryWithStartIcon = Template.bind({});
+PrimaryWithStartIcon.args = {
+  type: BUTTON_TYPES.PRIMARY,
+  children: 'Primary',
+  startIcon: <SaveIcon />
+};
+
+const PrimaryDisabled = Template.bind({});
+PrimaryDisabled.args = {
+  type: BUTTON_TYPES.PRIMARY,
+  children: 'Primary',
+  disabled: true
+};
+
+const PrimaryLoading = Template.bind({});
+PrimaryLoading.args = {
+  type: BUTTON_TYPES.PRIMARY,
+  children: 'Primary',
+  loading: true
+};
+
+const SecondaryDefault = Template.bind({});
+SecondaryDefault.args = {
   type: BUTTON_TYPES.SECONDARY,
   children: 'Secondary'
 };
 
-const Tertiary = Template.bind({});
-Tertiary.args = {
+const SecondaryWithStartIcon = Template.bind({});
+SecondaryWithStartIcon.args = {
+  type: BUTTON_TYPES.SECONDARY,
+  children: 'Secondary',
+  startIcon: <SaveIcon />
+};
+
+const SecondaryDisabled = Template.bind({});
+SecondaryDisabled.args = {
+  type: BUTTON_TYPES.SECONDARY,
+  children: 'Secondary',
+  disabled: true
+};
+
+const SecondaryLoading = Template.bind({});
+SecondaryLoading.args = {
+  type: BUTTON_TYPES.SECONDARY,
+  children: 'Secondary',
+  loading: true
+};
+
+const TertiaryDefault = Template.bind({});
+TertiaryDefault.args = {
   type: BUTTON_TYPES.TERTIARY,
   children: 'Tertiary'
+};
+
+const TertiaryWithStartIcon = Template.bind({});
+TertiaryWithStartIcon.args = {
+  type: BUTTON_TYPES.TERTIARY,
+  children: 'Tertiary',
+  startIcon: <SaveIcon />
+};
+
+const TertiaryDisabled = Template.bind({});
+TertiaryDisabled.args = {
+  type: BUTTON_TYPES.TERTIARY,
+  children: 'Tertiary',
+  disabled: true
+};
+
+const TertiaryLoading = Template.bind({});
+TertiaryLoading.args = {
+  type: BUTTON_TYPES.TERTIARY,
+  children: 'Tertiary',
+  loading: true
 };
 
 export default {
@@ -60,7 +94,16 @@ export default {
 };
 
 export {
-  Primary,
-  Secondary,
-  Tertiary
+  PrimaryDefault,
+  PrimaryWithStartIcon,
+  PrimaryDisabled,
+  PrimaryLoading,
+  SecondaryDefault,
+  SecondaryWithStartIcon,
+  SecondaryDisabled,
+  SecondaryLoading,
+  TertiaryDefault,
+  TertiaryWithStartIcon,
+  TertiaryDisabled,
+  TertiaryLoading
 };

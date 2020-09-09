@@ -22,7 +22,8 @@
     "build-storybook": "build-storybook -s public",
     "lint": "eslint src/**/*.+(js)",
     "lint-fix": "eslint --fix src/**/*.+(js)",
-    "format": "prettier --write src/**/*.+(js)"
+    "format": "prettier --write src/**/*.+(js)",
+    "analyze-webpack-bundle": "node scripts/analyze.js"
   },
   "lint-staged": {
     "*.+(js|jsx)": [
@@ -70,7 +71,9 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
     "prettier": "^2.1.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "react-is": "^16.13.1",
-    "storybook-addon-material-ui": "^0.9.0-alpha.21"
+    "storybook-addon-material-ui": "^0.9.0-alpha.21",
+    "webpack-bundle-analyzer": "^3.8.0"
   }
 }

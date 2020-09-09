@@ -31,10 +31,9 @@ module.exports = {
   rules: {
     'comma-dangle': ['warn', 'never'],
     'no-console': 'warn',
-    // MEMO: the rules below are set by Google's
-    // 'quotes': ['error', 'single'],
-    // 'semi': ['error', 'always'],
-    // 'comma-spacing': ['error', { 'before': false, 'after': true }],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
+    'comma-spacing': ['error', { 'before': false, 'after': true }],
     'indent': ['error', 2],
     'object-curly-spacing': ['warn', 'always'],
     'quote-props': ['error', 'as-needed'],
