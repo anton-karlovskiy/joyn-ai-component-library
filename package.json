@@ -27,12 +27,10 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ],
     "*.+(json|yml|yaml|css|md)": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "husky": {
