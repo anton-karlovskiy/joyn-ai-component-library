@@ -38,9 +38,8 @@ module.exports = {
     // ESLinting rules
     'comma-dangle': ['error', 'never'],
     'no-console': 'warn',
-    'indent': ['error', 2],
+    indent: ['error', 2],
     'quote-props': ['error', 'as-needed'],
-    'capitalized-comments': 'off',
     'max-len': ['warn',
       {
         code: 130
@@ -60,11 +59,12 @@ module.exports = {
         exceptions: ['/']
       }
     ],
+    'capitalized-comments': 'off',
     // MEMO: They are set by extends
+    'object-curly-spacing': ['error', 'always'],
     // 'quotes': ['error', 'single'],
     // 'semi': ['error', 'always'],
     // 'comma-spacing': ['error', { 'before': false, 'after': true }],
-    'object-curly-spacing': ['error', 'always'],
     // 'no-trailing-spaces': ['error', { 'skipBlankLines': false, 'ignoreComments': false }],
     // 'no-multi-spaces': 'error',
     // 'space-after-keywords': ['error', 'always'],
